@@ -105,12 +105,19 @@ export function isMainModule(moduleUrl) {
 }
 
 function main(argv) {
-  const [command, ...args] = argv;
+  let [command, ...args] = argv;
   if (!command) {
     console.error("usage: node scripts/with-app-env.mjs <command> [args…]");
     process.exit(2);
   }
   const env = mergeAppEnv(readAppEnv(projectRoot()), process.env);
+  // Windows does not launch `.cmd` shims through child_process.spawn unless
+  // a shell is enabled. Invoke Vite's JS entry with Node instead, preserving
+  // the wrapper's environment handling and avoiding shell quoting differences.
+  if (process.platform === "win32" && command === "vite") {
+    command = process.execPath;
+    args = [join(projectRoot(), "node_modules", "vite", "bin", "vite.js"), ...args];
+  }
   const child = spawn(command, args, { stdio: "inherit", env });
   // The dev server is long-running and is stopped by signalling this wrapper.
   for (const signal of ["SIGINT", "SIGTERM", "SIGHUP"]) {
