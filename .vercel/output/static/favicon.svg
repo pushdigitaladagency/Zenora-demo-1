@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Zenora">
+  <rect width="32" height="32" rx="6" fill="#1C1916"/>
+  <g fill="#A68458">
+    <path d="M6.4 7.4h19.2v3.2H6.4z"/>
+    <path d="M6.4 21.4h19.2v3.2H6.4z"/>
+    <path d="M18.2 10.6H25.6L13.8 21.4H6.4z"/>
+    <path d="M6.4 7.4h1.7v4.4H6.4z"/>
+    <path d="M23.9 7.4h1.7v4.4h-1.7z"/>
+    <path d="M6.4 20.2h1.7v4.4H6.4z"/>
+    <path d="M23.9 20.2h1.7v4.4h-1.7z"/>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Zenora by Zenvistas — Luxury Villas in Goldwins, Coimbatore",
+      "hasCanvas": false,
+      "bodyTextLen": 4699,
+      "bodyTextHash": "ae1bdb5f325695b01885eac96d9207538ed7415dc6eead3d24b4230320927baa",
+      "bodyTextPrefix": "Skip to content Zenora BY ZENVISTAS LIVING RESIDENCES MASTER PLA",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Zenora by Zenvistas — Luxury Villas in Goldwins, Coimbatore",
+      "hasCanvas": false,
+      "bodyTextLen": 4638,
+      "bodyTextHash": "6522e8e99d8f56f9626775ea8271c8270bf55abc6d815bc97db8db6f75bad008",
+      "bodyTextPrefix": "Skip to content Zenora BY ZENVISTAS Open menu Cinematic sequence",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
